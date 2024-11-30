@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="register.php" method="POST">
+        <input type="text" name="technician_id" placeholder="id" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="text" name="phone" placeholder="Phone" required>
+        <label for="type_of_service">Type of Service:</label>
+        <select id="type_of_service" name="type_of_service" required>
+            <option value="">Select Service Type</option>
+            <option value="plumber">Plumber</option>
+            <option value="electrician">Electrician</option>    
+        </select>
+
+
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h1>Technician Login</h1>
+    <form action="login.php" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+</body>
+
+</html>
